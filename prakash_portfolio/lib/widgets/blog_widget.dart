@@ -1,4 +1,4 @@
-import 'package:adityagurjar/config/constants.dart';
+import 'package:prakash_portfolio/config/constants.dart';
 import 'package:flutter/material.dart';
 import 'dart:html' as html;
 class BlogWidget extends StatelessWidget {
@@ -12,7 +12,7 @@ class BlogWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     double topBottomPadding = (index == 0 || index == length - 1) ? 16.0 : 8.0;
     return InkWell(
-      onTap: ()=>html.window.open(Constants.BLOG_URL+blog.uniqueSlug, 'adityadroid'),
+      // onTap: ()=>html.window.open(Constants.BLOG_URL+blog.uniqueSlug, 'adityadroid'),
       child: Card(
         margin:
         EdgeInsets.fromLTRB(16.0, topBottomPadding, 16.0, topBottomPadding),
@@ -22,9 +22,9 @@ class BlogWidget extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Image.network(
-                Constants.MEDIUM_IMAGE_CDN + blog.virtuals.previewImage.imageId,
-              ),
+              // Image.network(
+              //   Constants.MEDIUM_IMAGE_CDN + blog.virtuals.previewImage.imageId,
+              // ),
               SizedBox(
                 height: 16,
               ),

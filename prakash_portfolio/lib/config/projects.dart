@@ -1,89 +1,63 @@
-import 'package:adityagurjar/models/project_model.dart';
+import 'package:prakash_portfolio/models/project_model.dart';
 import 'assets.dart';
 
 final List<Project> projects = [
   Project(
-      name: 'Truelancer',
-      image: Assets.truelancer,
+    name: 'Joov',
+    image: Assets.joov,
+    description:
+        'Joov is a light therapy project, which is used firmware and application.\n'
+        'Developing the UI and API integrations followed by design.',
+  ),
+  Project(
+      name: 'ANS',
+      image: Assets.ans,
+      description: 'ANS is a project will be used in smart homes.'
+          'Wrote few modules of code for Wifi connectivity using C++.'),
+  Project(
+      name: 'Crypto Trading',
+      image: Assets.cryptoTrading,
       description:
-      'Truelancer Mobile App is a Freelancing Platform. You can Search Jobs & Hire Freelancers for work.',
-      link:
-      'https://play.google.com/store/apps/details?id=com.truelancer.app'),
+          'This project is a Mobile Application for Crypto currency enthusiast where a trader can buy and sale trade along with the access to wallet page and real time market data and last 24 hour change from the Binance exchange.'),
   Project(
-      name: 'Messio',
-      image: Assets.messio,
-      description:
-      'An Open-Source Messaging App built using Flutter and Firebase. Part of the series \'60 Days of Flutter',
-      link: 'https://github.com/adityadroid/messio'),
+    name: 'Meghshala',
+    image: Assets.meghshala,
+    description:
+        'Meghshala is an NGO, using this mobile application they can provide classes and content to the poor children through schools.',
+  ),
   Project(
-      name: 'Savaari',
-      image: Assets.savaari_consumer,
-      description:
-      'Savaari is the leading player in Outstation Cabs, Hourly Rental Cabs, Airport Pickups and Airport Drop Taxis. ',
-      link: 'https://play.google.com/store/apps/details?id=com.savaari.app'),
+    name: 'Saarthi Demo App',
+    image: Assets.saathi,
+    description:
+        'Saarthi is an NGO project, which will provide services to poor students.',
+  ),
   Project(
-      name: 'Savaari Partner',
-      image: Assets.savaari_partner,
-      description:
-      'This App allows cab drivers to conveniently share billing and other trip details scheduled to them.',
-      link:
-      'https://play.google.com/store/apps/details?id=com.savaari.driver.app'),
+    name: 'Belhasa Car Rental',
+    image: Assets.belhasa,
+    description:
+        'Belhasa Car Rental is a car rental project, where users can rent cars and use for their needs.',
+  ),
   Project(
-      name: 'Mynewcar',
-      image: Assets.mynewcar,
-      description:
-      'Through this App, along with doorstep delivery of a new car, one can also select the accessories to buy.',
-      link: 'https://play.google.com/store/apps/details?id=com.mynewcar.app'),
+    name: 'DOTS',
+    image: Assets.dots,
+    description:
+        'DOTs is a car rental project, where users can hire cars for their needs (Driver app and Rider App).',
+  ),
   Project(
-      name: 'Trivz',
-      image: Assets.trivz,
-      description:
-      'With the Trivz app, car owners can give test drives to car buyers.',
-      link:
-      'https://play.google.com/store/apps/details?id=in.mynewcar.testdrives'),
+    name: 'Kantipur',
+    image: Assets.kantipur,
+    description: 'Kantipur is a Restaurant application.',
+  ),
   Project(
-      name: 'Mydealer',
-      image: Assets.mydealer,
-      description:
-      'Mydealer App helps a car dealership to manage sales process and improve the productivity`.',
-      link: 'https://play.google.com/store/apps/details?id=in.mnc.mydealer'),
+    name: 'Mount Kailash',
+    image: Assets.mountKalilash,
+    description:
+        'Mount Kailash is a Restaurant application for Finland client.',
+  ),
   Project(
-      name: 'FaceLyt',
-      image: Assets.facelyt,
-      description:
-      'FaceLyt is an alternative and free client to manage your Facebook account.',
-      link:
-      'https://apkpure.com/facelyt-for-facebook-lite/com.adityaadi1467.facelytx'),
-  Project(
-      name: 'Cocoapay',
-      image: Assets.cocoapay,
-      description:
-      'Cocoapay helps merchants start accepting payments through POS devices and bill through the app.',
-      link: 'http://www.cocoapay.com/'),
-  Project(
-      name: 'VDrone',
-      image: Assets.vdrone,
-      description: 'A New company which does everything you dont want',
-      link: 'http://www.vdrone.xyz/'),
-  Project(
-      name: 'Wheelie Repairs',
-      image: Assets.wheelie_repairs,
-      description:
-      'Wheelie Repairs providers door to door garage services & breakdown assistance for vehicles.',
-      link:
-      'https://play.google.com/store/apps/details?id=com.wheelierepairs'),
-  Project(
-      name: 'Kharedi Now',
-      image: Assets.kharedi_now,
-      description: 'A Grocery app for the city of Latur.'),
-  Project(
-      name: 'Rajasthan Tourism',
-      image: Assets.rajasthan_tourism,
-      description:
-      'A app built using Cordova which had info about Rajasthan and its tourism destinations'),
-  Project(
-      name: 'Railenq',
-      image: Assets.railenq,
-      description:
-      'RailENQ is an app for trains and Railway Enquiries.'),
+    name: 'ZKTOR',
+    image: Assets.zktor,
+    description:
+        'ZKTOR is a Social media come job search oriented platform where helping for people looking for jobs (freshers & experienced)',
+  ),
 ];

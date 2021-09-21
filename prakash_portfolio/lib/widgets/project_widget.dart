@@ -1,10 +1,11 @@
-import 'package:adityagurjar/models/project_model.dart';
+import 'package:prakash_portfolio/models/project_model.dart';
 import 'package:flutter/material.dart';
 import 'dart:html' as html;
 
 class ProjectWidget extends StatelessWidget {
   final Project _project;
   final double _bottomPadding;
+
   ProjectWidget(this._project, this._bottomPadding);
 
   @override
@@ -24,7 +25,7 @@ class ProjectWidget extends StatelessWidget {
               Expanded(
                   flex: 40,
                   child: Image.asset(
-                    _project.image,
+                    _project.image!,
                     width: width * .25,
                     height: width * .25,
                   )),
@@ -40,14 +41,14 @@ class ProjectWidget extends StatelessWidget {
                     direction: Axis.horizontal,
                     children: <Widget>[
                       Text(
-                        _project.name,
+                        _project.name!,
                         style: Theme.of(context).textTheme.headline6,
                       ),
                       SizedBox(
                         height: height * .01,
                       ),
                       Text(
-                        _project.description,
+                        _project.description!,
                         textScaleFactor: 1.2,
                         style: Theme.of(context).textTheme.caption,
                       ),
@@ -63,6 +64,6 @@ class ProjectWidget extends StatelessWidget {
   }
 
   void onProjectClick() {
-    if (_project.link != null) html.window.open(_project.link, 'adityadroid');
+    if (_project.link != null) html.window.open(_project.link!, 'adityadroid');
   }
 }

@@ -1,8 +1,8 @@
-import 'package:adityagurjar/config/assets.dart';
-import 'package:adityagurjar/tabs/about_tab.dart';
-import 'package:adityagurjar/tabs/blog_tab.dart';
-import 'package:adityagurjar/tabs/projects_tab.dart';
-import 'package:adityagurjar/widgets/theme_inherited_widget.dart';
+import 'package:prakash_portfolio/config/assets.dart';
+import 'package:prakash_portfolio/tabs/about_tab.dart';
+import 'package:prakash_portfolio/tabs/blog_tab.dart';
+import 'package:prakash_portfolio/tabs/projects_tab.dart';
+import 'package:prakash_portfolio/widgets/theme_inherited_widget.dart';
 import 'package:flutter/material.dart';
 class HomePage extends StatefulWidget {
   @override
@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           actions: <Widget>[
             IconButton(
-              icon: ThemeSwitcher.of(context).isDarkModeOn?Icon(Icons.wb_sunny):Image.asset(Assets.moon,height: 20,width: 20,),
+              icon: ThemeSwitcher.of(context).isDarkModeOn!?Icon(Icons.wb_sunny):Image.asset(Assets.moon,height: 20,width: 20,),
               onPressed: ()=> ThemeSwitcher.of(context).switchDarkMode(),
             )
           ],
